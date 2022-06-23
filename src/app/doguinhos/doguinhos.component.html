@@ -1,12 +1,15 @@
 <div class="dog">
-    <button class="generate-button" (click)="getDog()">GENERATE DOG</button>
-    <div class="random-dog" *ngIf="this.doguinho">
-        <div *ngIf="doguinho.url.includes('.mp4') || doguinho.url.includes('.webm'); else normalDog">
+    <button class="getDogs" (click)="getDog()">GENERATE DOG</button>
+
+    <div class="display" *ngIf="this.doguinho">
+        <div *ngIf="doguinho.url.includes('.mp4') || doguinho.url.includes('.webm'); else imagem">
             <video [src]="doguinho.url" autoplay muted loop></video>
         </div>
-        <ng-template #normalDog>
+        <ng-template #imagem>
             <img [src]="doguinho.url" alt="">
         </ng-template>
-        <p></p>
     </div>
-</div>
+    <div class="bytes">
+        <p id="tamanho" *ngIf="this.doguinho">Tamanho: {{doguinho.fileSizeBytes}} bytes</p>
+    </div>
+</div> 

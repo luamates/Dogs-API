@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=MedievalSharp&family=Raleway:wght@300&display=swap');
+
+.dog {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.getDogs {
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(35, 113, 35, 0.83);
+    width: 180px;
+    height: 35px;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-size: 15px;
+    margin: auto;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.getDogs:hover {
+    background-color: rgb(115, 210, 141);
+    color: black;
+}
+
+.display {
+    width: 60%;
+    height: 500px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(28, 68, 34, 0.83);
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+video, img {
+   width: 99%;
+   height: 495px;
+   object-fit: cover;
+   border-radius: 5px;
+}
+
+.bytes {
+    margin-top: 0px;
+}

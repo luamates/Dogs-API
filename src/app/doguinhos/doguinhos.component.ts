@@ -11,7 +11,6 @@ export class DoguinhosComponent implements OnInit {
 
   doguinho?: Doguinho;
 
-
   constructor(private doguinhoService: DoguinhosService) { }
 
   ngOnInit(): void {
@@ -19,9 +18,10 @@ export class DoguinhosComponent implements OnInit {
 
   getDog(): void {
     this.doguinhoService.getDog().subscribe((doguinho) => {
-      this.doguinho = doguinho
+      this.doguinho = doguinho;
     })
   }
+
 }
 
 

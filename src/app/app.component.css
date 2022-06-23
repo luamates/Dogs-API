@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+.head-flex {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    background-color: rgba(35, 113, 35, 0.83);
+    width: 50%;
+    height: 110px;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.head-flex:hover {
+    background-color: rgba(91, 141, 94, 0.83);
+    width: 50%;
+}
+
+.head-flex:hover h1 {
+    color: black;
+}
+
+.head-flex:hover p {
+    color: black;
+}
+
+.head-flex:hover a {
+    color: black;
+}
+
+h1,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    font-family: 'MedievalSharp', cursive;
+}
+
+p {
+    text-align: left;
+    color: white;
+    margin-top: -20px;
+    font-family: 'Charm', cursive;
+    font-size: 20px;
+    transition: .3s;
+}
+
+a:hover {
+    color: rgb(83, 83, 200);
+}
+
+img {
+    width: 100px;
+}
+
+.icone {
+    width: 20%;
+    padding-left: 5%;
+    vertical-align: middle;
+    height: 110px;
+    transition: .3s;
+}
+
+.head-flex:hover .icone {
+    padding-left: 7%;
+}
+
+.titulo {
+    width: 80%;
+    padding-left: 2%;
+    vertical-align: middle;
+    height: 110px;
+    padding-top: 10px;
+    transition: .3s;
+}
+
+.head-flex:hover .titulo {
+    padding-left: 4%;
+}
