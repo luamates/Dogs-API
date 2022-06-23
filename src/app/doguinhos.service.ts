@@ -12,9 +12,9 @@ export class DoguinhosService {
 
   apiUrl = "https://random.dog/woof.json";
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
   getDog(): Observable<Doguinho> {
     return this.httpClient.get<Doguinho>(this.apiUrl)
   }
-}
+} 
